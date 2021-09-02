@@ -14,3 +14,5 @@ router.post("/api/workout", ({ body }, res) => {
 router.post("/api/stats", ({ body }, res) => {
   Workout.insertMany(body);
 });
+
+module.exports = router;
