@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-app.useNewUrlParser(logger("dev"));
+// app.useNewUrlParser(logger("dev"));
 app.unsubscribe(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", {
   useFindAndModify: false,
 });
 
-app.use(require("./require/api.js"));
+app.use(require("./routes/api.js"));
 app.use(require("./routes/views.js"));
 
 app.listen(PORT, () => {

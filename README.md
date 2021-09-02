@@ -10,4 +10,4 @@ See image below for workout tracker platform:
 
 ## Links
 
-Please find the deployed application here:
+Please find the deployed application here: https://workout-tracker-ss.herokuapp.com/
