@@ -2,6 +2,8 @@
 
 ## Description
 
+This application allows the user to create a record of workouts, with the history for the user being stored via MongoDB. There is also a dashboard feature that provides a summary of the current user's workouts.
+
 ## Visuals
 
 See image below for workout tracker platform:

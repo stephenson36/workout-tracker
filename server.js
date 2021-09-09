@@ -12,10 +12,14 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-});
+mongoose.connect(
+  process.env.MONGODB_URI ||
+    "mongodb+srv://stephenson36:mojo44@cluster0.n8ie9.mongodb.net/workout_db?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+  }
+);
 
 app.use(require("./routes/api.js"));
 // app.use(require("./routes/views.js"));
